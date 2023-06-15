@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:708,600, 400 | Lexend: 490");
+.log-in {
+    align-items: flex-start;
+    background-color: var(--background);
+    border: 1px none;
+    display: flex;
+    width: 1728px;
+}
+.hidden,
+.hidden  {
+    pointer-events: none;
+    visibility: hidden;
+}
+.overlap-group3 {
+    background-image: url(https://anima-uploads.s3.amazonaws.com/projects/646ef81c13d928b5889b2011/releases/646ef9cd3b467f42f9c2d46e/img/20008474-6230278-3.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 1117px;
+    position: relative;
+    width: 1728px;
+}
+.vector {
+    height: 33px;
+    left: 403px;
+    position: absolute;
+    top: 250px;
+    width: 33px;
+}
+.enter-your-password {
+    left: 552px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 576px;
+}
+.rectangle-1916 {
+    height: 722px;
+    left: 356px;
+    background-color: var(--putih);
+    border-radius: 50px;
+    position: absolute;
+    top: 200px;
+    width: 1016px;
+}
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title {
+    font-weight: 700;
+    height: 90px;
+    letter-spacing: 0;
+    position: absolute;
+    top: 266px;
+    color: var(--mine-shaft);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-xxxx1);
+    left: 761px;
+    line-height: normal;
+    text-align: center;
+}
+.log-in .sign {
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+}
+.sign-up {
+    height: 30px;
+    left: 674px;
+    top: 792px;
+}
+.span1 {
+    color: var(--granite-gray);
+    font-family:var(--font-family-poppins);
+    font-size: var(--font-size-x1);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.overlap-group2 {
+    height: 378px;
+    left: 540px;
+    position: absolute;
+    top: 386px;
+    width: 650px;
+}
+.text-field-2 {
+    height: 104px;
+    left: 0;
+    position: absolute;
+    top: 142px;
+}
+.log-in .text-field-3 {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 648px;
+}
+.frame-243 {
+    align-self: stretch;
+    display: flex;
+    height: 27px;
+    min-width: 648px;
+    position: relative;
+}
+    .label-1 {
+    height: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 93px;
+}
+    .text-field {
+    align-self: stretch;
+    border: 1px solid;
+    border-color: var(--granite-gray);
+    border-radius: 12px;
+    position: relative;
+    height: 56px;
+    min-width: 648px;
+}
+
+.overlap-group1 {
+    height: 33px;
+    left: 576px;
+    position: absolute;
+    top: 142px;
+    width: 72px;
+}
+.icon {
+    height: 29px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 29px;
+}
+.hide {
+    color:#666666cc;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-family: var(--font-family-lexend);
+    font-size: var(--font-size-m2);
+    left: 22px;
+    line-height: normal;
+    position: absolute;
+    text-align: right;
+    width: 50px;
+    top: 0;
+}
+.overlap-group {
+    height: 378px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 650px;
+}
+.yha {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    min-height: 378px;
+    position: absolute;
+    top: 0;
+    width: 650px;
+}
+.forget-your-password {
+    color: #111111;
+    font-family: var(--font-family-lexend);
+    font-size: var(--font-size-s2);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-right: 2px;
+    margin-top: 159px;
+    min-height: 29px;
+    text-align: right;
+    text-decoration: underline;
+    width: 212px;
+}
+.text-field-1 {
+    margin-right: 2px;
+    position: relative;
+}
+.label {
+    height: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+    width: 104px;
+}
+.button {
+    background-color: var(--orange-tua);
+    border-radius: 40px;
+    height: 76px;
+    margin-right: 2px;
+    margin-top: 27px;
+    width: 648px;
+}
+.sign-in {
+    height: 38px;
+    left: 261px;
+    top: 321px;
+    width: 124px;
+    text-align: center;
+}
+.inputs {
+    align-items: center;
+    display: flex;
+    left: 12px;
+    position: absolute;
+    top: 49px;
+    width: fit-content;
+}
+.enter-your-email-address {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}

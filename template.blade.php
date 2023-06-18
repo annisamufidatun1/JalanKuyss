@@ -727,8 +727,8 @@
                         <img src="Logo Icon/Lonceng.svg" alt="" id="lonceng">
                     </div>
 
-                    <div class="profilepic">
-                        <img src="" alt="">
+                    <div class="miniprofile">
+                        <img src="Logo Icon/Hide.svg" alt="" id="show">
                     </div>
 
                     <div class="text-center" id="name">
@@ -759,23 +759,23 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-4">
-                                <img src="Logo Icon/Poster.svg" alt="" style="height: 220px; width: 220px; margin-left:5px; margin-top: 5px">
+                                <img src="{{ url('/poster_event/'.$randomEvent->eventPoster) }}" alt="" style="height: 220px; width: 220px; margin-left:5px; margin-top: 5px">
                             </div>
                             <div class="col-8">
-                                <h5 style="font-family: 'Poppins'; font-weight: 700; font-size: 20px; color: #143362">(Nama Event)</h5>
+                                <h5 style="font-family: 'Poppins'; font-weight: 700; font-size: 20px; color: #143362">{{ $randomEvent->title }}</h5>
                                 <p style="font-size: 15px; vertical-align:middle; margin:10px 0">
-                                    <iconify-icon icon="ion:location-outline" style="font-size: 25px; color: black; vertical-align:middle"></iconify-icon> (Location)
+                                    <iconify-icon icon="ion:location-outline" style="font-size: 25px; color: black; vertical-align:middle"></iconify-icon> {{ $randomEvent->event_location }}
                                 </p>
                                 <p style="font-size: 15px; vertical-align:middle; margin:0">
-                                    <iconify-icon icon="ant-design:star-filled" style="font-size: 25px; color: black; vertical-align:middle"></iconify-icon> (rating)
+                                    <iconify-icon icon="ant-design:star-filled" style="font-size: 25px; color: black; vertical-align:middle"></iconify-icon> {{ $randomEvent->rating }}
                                 </p>
-                                <p style="color:#5F647E; margin-top: 10px; margin-bottom: 10px">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit in quas cumque unde rem nesciunt amet ipsum itaque..
+                                <p class="text-truncate" style="color:#5F647E; margin-top: 10px; margin-bottom: 10px">
+                                    {{ $randomEvent->event_detail }}
                                 </p>
-                                <button type="button" class="btn" style="background-color: #FFC68F; border-radius: 10px; margin-left: 0; margin-top: 0; color: black;">
+                                <button type="button" class="btn" href="" style="background-color: #FFC68F; border-radius: 10px; margin-left: 0; margin-top: 0; color: black;">
                                     Detail
                                 </button>
-                                <button type="button" class="btn" style="background-color: #FD7B46; border-radius: 10px; margin-left: 10px; margin-top: 0; color: black;">
+                                <button type="button" href=" {{ $randomEvent->linkweb }}" class="btn" style="background-color: #FD7B46; border-radius: 10px; margin-left: 10px; margin-top: 0; color: black;">
                                     Get a Ticket
                                 </button>
 
@@ -813,6 +813,22 @@
           });
         });
 
+        $(document).ready(function() {
+            $('#generate').click(function() {
+                $.ajax({
+                    url: '/random-event',
+                    type: 'GET',
+                    success: function(response) {
+                        $('body').append(response);
+                        $('.modal').show();
+
+                        $('.close').click(function() {
+                            $('.modal').remove();
+                        });
+                    }
+                });
+            });
+        });
         $(document).ready(function()
         $(document).on('click', '#set_dtl', function() (
         var title = $(p).data('title'):
